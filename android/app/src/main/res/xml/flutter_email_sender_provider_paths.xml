@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <cache-path name="flutter_email_sender_cache" path="flutter_email_sender/cache" />
+    <external-cache-path name="flutter_email_sender_external_cache" path="." />
+    <external-files-path name="flutter_email_sender_external_files" path="." />
+</paths>

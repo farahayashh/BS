@@ -1,0 +1,61 @@
+
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+import 'circleprogress.dart';
+
+class Progresspage extends StatefulWidget {
+  const Progresspage({Key? key}) : super(key: key);
+
+  @override
+  State<Progresspage> createState() => _ProgresspageState();
+}
+
+class _ProgresspageState extends State<Progresspage> with SingleTickerProviderStateMixin{
+
+  late AnimationController _animationController;
+  late Animation<double> _animation;
+  double maxProgress = 100;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _animationController = AnimationController(vsync: this,duration: Duration(milliseconds:3000));
+  _animation = Tween<double>(begin:0 ,end : maxProgress).animate(_animationController)
+    ..addListener(() {
+      setState(() {
+
+      });
+    });
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Center(
+        child: CustomPaint(
+          foregroundPainter: CircleProgress(_animation.value),
+          child:  Container(
+            width: 300,
+            height: 300,
+            //color: Colors.blue,
+            child: GestureDetector(
+                onTap: (){
+                  if (_animation.value == maxProgress)
+                  {
+                    _animationController.reverse();
+                  }
+                  else {
+                    _animationController.forward();
+                  }
+                },
+
+                child: Center(child: Text('${_animation.value.toInt()}', style: TextStyle(fontSize: 50),))),
+          ),
+        ),
+      ) ,
+    );
+  }
+}
