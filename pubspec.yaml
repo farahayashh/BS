@@ -30,7 +30,6 @@ dependencies:
   intl: ^0.17.0
   flutter:
     sdk: flutter
-  flutter_swiper: ^1.1.6
   mailer: ^5.0.0
   email_launcher: ^1.0.0
   flutter_email_sender: ^5.0.1
@@ -38,14 +37,12 @@ dependencies:
   flutter_launcher_icons: ^0.9.0
   http: ^0.13.4
   get: ^4.6.1
-  sharedpreference: ^0.0.1
   flutter_easyloading: ^3.0.3
   flutter_secure_storage: ^5.0.2
   comment_box: ^0.0.15
   provider: ^6.0.1
   dio: ^4.0.4
   chopper: ^4.0.4
-  flutter_search_bar: ^2.1.0
   image_picker: ^0.8.4+4
   curved_navigation_bar: ^1.0.3
   gender_picker: ^1.1.0
@@ -53,7 +50,6 @@ dependencies:
   day_picker: ^2.1.1
   flutter_spinkit: ^5.1.0
   sliver_tools: ^0.2.5
-  charts_flutter: ^0.12.0
   fl_chart: ^0.50.5
   line_chart: ^1.1.11
   syncfusion_flutter_charts: ^20.2.40
