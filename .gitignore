@@ -29,9 +29,9 @@
 .packages
 .pub-cache/
 .pub/
-/build/
 
 # Web related
+/build/
 
 # Symbolication related
 app.*.symbols
